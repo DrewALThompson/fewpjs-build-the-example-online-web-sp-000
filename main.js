@@ -11,7 +11,7 @@ for (const like of likes) {
   like.addEventListener('click', liked)
 }
 function liked(e){
-  
+  heart = target.e
 }
 
 
