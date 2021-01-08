@@ -13,6 +13,7 @@ for (const like of likes) {
 
 function liked(e){
   heart = e.target;
+  if(heart.textContent == FULL_HEART)
   mimicServerCall()
     .then(function (response) {
       heart.classList.add('activated-heart');
