@@ -7,14 +7,12 @@ const FULL_HEART = '♥';
 const errorModal = document.getElementById('modal');
 const likes = document.querySelectorAll('.like-glyph');
 
-document.addEventListener('DOMContentLoaded', () => {
   
-  likes.addEventListener('click', liked)
+likes.addEventListener('click', liked)
+function liked(e){
   
-  function liked(){
     
-  }
-});
+}
 
 
 //------------------------------------------------------------------------------
