@@ -7,8 +7,9 @@ const FULL_HEART = '♥';
 const errorModal = document.getElementById('modal');
 const likes = document.querySelectorAll('.like-glyph');
 
-  
-likes.addEventListener('click', liked)
+for (const like of likes) {
+  likes.addEventListener('click', liked)
+}
 function liked(e){
   
     
