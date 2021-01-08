@@ -6,9 +6,9 @@ const FULL_HEART = '♥';
 
 const errorModal = document.getElementById('modal');
 const likes = document.querySelectorAll('.like-glyph');
+errorModal.classList.add('hidden');
 
 document.addEventListener('DOMContentLoaded', () => {
-  errorModal.classList.add('hidden');
   
   likes.addEventListener('click',(e) => {
     
