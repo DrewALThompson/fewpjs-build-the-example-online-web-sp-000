@@ -13,8 +13,20 @@ for (const like of likes) {
 
 function liked(e){
   heart = e.target;
-  if(heart.textContent == FULL_HEART)
-  mimicServerCall()
+  if(heart.textContent == FULL_HEART){
+    mimicServerCall()
+    .then(function (response) {
+      heart.classList.remove('activated-heart');
+      heart.textContent = EMPTY_HEART;
+    })
+    .catch(function (error) {
+      document.getElementById('modal').classList.remove('hidden');
+      setTimeout(function () {
+        document.getElementById('modal').classList.add('hidden');
+      }, 5000);
+    });
+  } else {
+    mimicServerCall()
     .then(function (response) {
       heart.classList.add('activated-heart');
       heart.textContent = FULL_HEART;
@@ -25,6 +37,8 @@ function liked(e){
         document.getElementById('modal').classList.add('hidden');
       }, 5000);
     });
+  }
+  
 }
 
 
