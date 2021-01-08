@@ -1,13 +1,16 @@
 // Defining text characters for the empty and full hearts for you to use later.
-const EMPTY_HEART = '♡'
-const FULL_HEART = '♥'
+const EMPTY_HEART = '♡';
+const FULL_HEART = '♥';
 
 // Your JavaScript code goes here!
 
 const errorModal = document.getElementById('modal');
+const likes = 
 
 document.addEventListener('DOMContentLoaded', () => {
-  errorModal.
+  errorModal.classList.add('hidden');
+  
+  
 })
 
 
