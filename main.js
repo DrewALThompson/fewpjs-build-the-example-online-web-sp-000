@@ -9,7 +9,7 @@ const likes = document.querySelectorAll('.like-glyph');
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  likes.addEventListener('click',(e) => {
+  likes.addEventListener('click',() => {
     
   });
   
