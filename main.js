@@ -13,7 +13,17 @@ for (const like of likes) {
 
 function liked(e){
   heart = e.target;
-  
+  mimicServerCall()
+    .then(function (response) {
+      heart.classList.add('activated-heart');
+      heart.textContent = FULL_HEART;
+    })
+    .catch(function (error) {
+      document.getElementById('modal').classList.remove('hidden');
+      setTimeout(function () {
+        document.getElementById('modal').classList.add('hidden');
+      }, 5000);
+    });
 }
 
 
