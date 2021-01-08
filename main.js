@@ -4,7 +4,9 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-document.addEventListener('DOM')
+document.addEventListener('DOMContentLoaded', () => {
+  
+})
 
 
 //------------------------------------------------------------------------------
