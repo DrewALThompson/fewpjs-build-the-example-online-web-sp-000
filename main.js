@@ -12,7 +12,6 @@ for (const like of likes) {
 }
 function liked(e){
   
-    
 }
 
 
