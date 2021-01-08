@@ -5,7 +5,7 @@ const FULL_HEART = '♥';
 // Your JavaScript code goes here!
 
 const errorModal = document.getElementById('modal');
-const likes = 
+const likes = document.querySelectorAll('likes-glyph')
 
 document.addEventListener('DOMContentLoaded', () => {
   errorModal.classList.add('hidden');
