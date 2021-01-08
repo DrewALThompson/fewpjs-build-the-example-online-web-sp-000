@@ -8,7 +8,7 @@ const errorModal = document.getElementById('modal');
 const likes = document.querySelectorAll('.like-glyph');
 
 for (const like of likes) {
-  likes.addEventListener('click', liked)
+  like.addEventListener('click', liked)
 }
 function liked(e){
   
